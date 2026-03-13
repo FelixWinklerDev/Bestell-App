@@ -1,0 +1,11 @@
+.hero {
+  height: 550px;
+  width: 100%;
+}
+
+.restaurant-logo {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  border: solid #fdeadc 10px;
+}

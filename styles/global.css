@@ -12,12 +12,36 @@ footer {
   background-color: #E76C1F;
 }
 
-section {
-  background-color: #FDEADC;
-}
+section {}
 
 button {
   border-width: 0;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Palaquin-Bold';
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #363534;
+}
+
+p {
+  font-family: 'Palaquin-Medium';
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #363534;
+}
+
+span {
+  font-family: 'Palaquin-Bold';
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: #E76C1F;
 }

@@ -29,3 +29,9 @@
 .header-logo {
   margin-left: 50px;
 }
+
+.positioning-logo {
+  position: fixed;
+  left: 42%;
+  top: 65%;
+}
