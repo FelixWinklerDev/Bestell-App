@@ -10,3 +10,9 @@ function init() {
 //    contentRef.innerHTML += getMenuTemplate(index);
 //  }
 //}
+
+function formatToCurrency(amount) {
+  let formatted = amount.toFixed(2);
+  let dotReplace = formatted.replace('.', ',');
+  return dotReplace + '€';
+}
