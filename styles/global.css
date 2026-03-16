@@ -33,6 +33,13 @@ h1 {
   color: #363534;
 }
 
+h2 {
+  font-family: 'Palaquin-Bold';
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #363534;
+}
+
 p {
   font-family: 'Palaquin-Medium';
   font-size: 1.6rem;
@@ -41,8 +48,8 @@ p {
 }
 
 span {
-  font-family: 'Palaquin-Bold';
-  font-weight: 700;
-  font-size: 4.5rem;
-  color: #E76C1F;
+  font-family: 'Palaquin-Medium';
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #363534;
 }

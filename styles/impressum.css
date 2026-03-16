@@ -1,43 +1,7 @@
 .imprint-page {
-  p {
-    margin-bottom: 0.5rem;
-  }
-
-  h1 {
-    font-family: 'Palaquin-Bold';
-    font-size: 4.5rem;
-    font-weight: 700;
-    color: #363534;
-    margin-top: 1rem;
-    margin-bottom: 1.9rem;
-  }
-
-  h2 {
-    font-family: 'Palaquin-Bold';
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #363534;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  h3 {
-    font-family: 'Palaquin-Bold';
-    font-size: 3.0rem;
-    font-weight: 700;
-    color: #363534;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  a {
-    color: #E76C1F;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  ul,
+  li {
+    font-size: 1.6rem;
   }
 
   .operator {
@@ -60,5 +24,11 @@
 
   .seal {
     padding-bottom: 3rem;
+  }
+}
+
+@media(max-width: 880px) {
+  .br-point {
+    overflow-wrap: break-word;
   }
 }

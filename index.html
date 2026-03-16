@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bestell-App</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/icons/Property 1=default.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/fonts.css">
@@ -13,7 +13,7 @@
   <script src="script.js"></script>
   <script src="./scripts/templates.js"></script>
 </head>
-<body>
+<body onload="init()">
   <header class="header-flex" id="top">
     <a href="index.html" class="header-logo"><img src="./assets/icons/Logo 01.png" alt="Logo"></a>
     <nav>
@@ -27,14 +27,14 @@
   <section class="hero-section">
     <img class="hero" src="./assets/img/hero.png" alt="Menü">
   </section>
-  <section>
+  <section class="restaurant-details">
     <div class="positioning-logo">
       <img class="restaurant-logo" src="./assets/img/5045650232394c82bc6d0c922b2ea0aaace7e71d.png"
         alt="Restaurant-Logo">
     </div>
-    <section class="restaurant-details">
+    <section>
       <div class="flex-title">
-        <h1><span>Burger</span>House</h1>
+        <h1><span class="orange-inline">Burger</span>House</h1>
         <div class="evaluation">
           <img class="star" src="./assets/icons/star.png" alt="Stern">
           <p>4,1 (317)</p>
@@ -43,12 +43,18 @@
       <p class="sub-title">Die besten Burger und Pizzen in deiner Umgebung!</p>
     </section>
   </section>
-  <main>
+  <main id="content-wrapper">
     <section id="main-content">
-      <aside id="basket-content">
-
-      </aside>
+      <div class="mother-container">
+        <section class="burger-title">
+          <img class="burger" src="./assets/icons/burgerlogo.png" alt="Burgerlogo">
+          <h2>Burger</h2>
+        </section>
     </section>
+    <aside id="basket-content">
+
+    </aside>
+    </div>
   </main>
   <dialog id="basket-mobile" class="d-none show-mobile-basket">
 

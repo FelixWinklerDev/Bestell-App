@@ -12,7 +12,7 @@ let products = [
         name: 'Veganer Burger mit Roter Beete und Tofu',
         price: 12.99,
         description:
-          'rote Beete, Kidneybohnen, Gurken, Sojageschnetzeltes, Tomaten, hausgemachte Vinigrette',
+          'rote Beete, Kidneybohnen, Gurken, Sojageschnetzeltes, Tomaten, hausgemachter Vinaigrette',
       },
       {
         name: 'Big Beef Burger',
@@ -59,7 +59,7 @@ let products = [
         name: 'Klassischer Salat',
         price: 9.99,
         description:
-          'gemischter Blattsalat, Paprika, Tomaten, Gurken, Granatapfelkerne, hausgemachter Vinigrette, Croûtons',
+          'gemischter Blattsalat, Paprika, Tomaten, Gurken, Granatapfelkerne, hausgemachter Vinaigrette, Croûtons',
       },
       {
         name: 'Ceasar Salat',
