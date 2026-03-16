@@ -30,6 +30,10 @@
   margin-left: 50px;
 }
 
+.header-logo:hover {
+  filter: drop-shadow(0px 0px 4px #ffffff);
+}
+
 .positioning-logo {
   position: absolute;
   left: 43.5%;
@@ -72,12 +76,12 @@
 .footer-positioning {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 100px;
+  gap: 30px;
 }
 
-.footer-txt,
 .footer-link {
   color: white;
 }
@@ -87,6 +91,6 @@
   scale: calc(1.1);
   text-shadow:
     1px 1px 2px red,
-    0 0 1em black,
-    0 0 0.2em black;
+    0 0 1rem #FACAAC,
+    0 0 0.2rem #FACAAC;
 }
