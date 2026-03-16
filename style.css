@@ -31,7 +31,62 @@
 }
 
 .positioning-logo {
-  position: fixed;
-  left: 42%;
+  position: absolute;
+  left: 43.5%;
   top: 65%;
+}
+
+.restaurant-details {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.evaluation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  background-color: #FACAAC;
+  padding: 2px;
+  margin-top: 20px;
+  gap: 4px;
+}
+
+.flex-title {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sub-title {
+  margin-bottom: 20px;
+}
+
+.d-none {
+  display: none;
+}
+
+.footer-positioning {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.footer-txt,
+.footer-link {
+  color: white;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  scale: calc(1.1);
+  text-shadow:
+    1px 1px 2px red,
+    0 0 1em black,
+    0 0 0.2em black;
 }

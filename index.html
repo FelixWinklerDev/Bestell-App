@@ -14,8 +14,8 @@
   <script src="./scripts/templates.js"></script>
 </head>
 <body>
-  <header class="header-flex">
-    <button class="header-logo"><img src="./assets/icons/Logo 01.png" alt=""></button>
+  <header class="header-flex" id="top">
+    <a href="index.html" class="header-logo"><img src="./assets/icons/Logo 01.png" alt="Logo"></a>
     <nav>
       <button id="burger-menu">
         <div class="burger-line"></div>
@@ -32,20 +32,31 @@
       <img class="restaurant-logo" src="./assets/img/5045650232394c82bc6d0c922b2ea0aaace7e71d.png"
         alt="Restaurant-Logo">
     </div>
-    <section>
-      <h1><span>Burger</span>House</h1>
-      <p>The best of Burgers, Pizza, and Greens, all in one great place.</p>
+    <section class="restaurant-details">
+      <div class="flex-title">
+        <h1><span>Burger</span>House</h1>
+        <div class="evaluation">
+          <img class="star" src="./assets/icons/star.png" alt="Stern">
+          <p>4,1 (317)</p>
+        </div>
+      </div>
+      <p class="sub-title">The best of Burgers, Pizza, and Greens, all in one great place.</p>
     </section>
   </section>
   <main>
-    <section>
-      <aside>
+    <section id="main-content">
+      <aside id="basket-content">
 
       </aside>
     </section>
   </main>
-  <footer>
+  <dialog id="basket-mobile" class="d-none show-mobile-basket">
 
+  </dialog>
+  <footer class="footer-positioning">
+    <a class="footer-link" href="#top">©2025 BurgerHouse</a>
+    <a class="footer-link" href="./impressum.html">Imprint</a>
+    <a class="footer-link" target="_blank" href="https://www.youtube.com/watch?v=YUnvdq9_TKI">Coockie Reference</a>
   </footer>
 </body>
 </html>

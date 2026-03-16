@@ -12,8 +12,6 @@ footer {
   background-color: #E76C1F;
 }
 
-section {}
-
 button {
   border-width: 0;
   cursor: pointer;
@@ -23,6 +21,9 @@ button {
 a {
   text-decoration: none;
   cursor: pointer;
+  font-family: 'Palaquin-Medium';
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 h1 {
