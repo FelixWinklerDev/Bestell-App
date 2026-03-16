@@ -1,7 +1,15 @@
 .imprint-page {
+  a {
+    color: #E76C1F;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
   ul,
   li {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .operator {

@@ -128,3 +128,13 @@
   align-items: center;
   background-color: #E76C1F;
 }
+
+.order-section {
+  background-color: #fdeadc;
+}
+
+.positioning-name-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
