@@ -99,7 +99,6 @@
 
 #content-wrapper {
   width: 100%;
-  padding: 16px;
   display: flex;
 }
 
@@ -110,16 +109,15 @@
 #basket-content {
   width: 300px;
   flex-grow: 1;
-  border: red 2px solid;
   padding: 16px;
   position: sticky;
   top: 0;
+  border-radius: 10px;
+  background-color: #333;
 }
 
-.mother-container {
-  height: 100%;
-  width: 100%;
-  padding: 20px;
+.mother-container{
+  gap: 20px;
 }
 
 .burger-title {

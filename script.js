@@ -7,7 +7,14 @@ function renderMenu() {
   contentRef.innerHTML = '';
 
   for (let index = 0; index < products.length; index++) {
-    contentRef.innerHTML += getMenuTemplate(index);
+    let category = products[index];
+    let items = '';
+    
+    for (let categoryIndex = 0; categoryIndex < category.items.length; categoryIndex++) {
+      let item = category.items[categoryIndex];
+      items += `<div>${item.name} - ${item.price}€</div>`
+    }
+  contentRef.innerHTML += getMenuTemplate(index, items);
   }
 }
 
