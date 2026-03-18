@@ -108,6 +108,7 @@
 
 #basket-content {
   width: 300px;
+  height: 500px;
   flex-grow: 1;
   padding: 16px;
   position: sticky;
@@ -117,7 +118,9 @@
 }
 
 .mother-container{
-  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .dish-title {
@@ -130,10 +133,35 @@
 .order-section {
   background-color: #fdeadc;
   display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 15px;
+  gap: 15px;
 }
 
-.positioning-name-price {
+.positioning-name-price,
+.positioning-description-button {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+}
+
+.positioning-items{
+  width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#basket-btn{
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.positioning-basket{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

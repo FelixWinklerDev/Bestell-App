@@ -3,7 +3,7 @@ function getCategoryHeaderTemplate(index) {
     <div class="category-wrapper">
       <section class="dish-title">
         <img class="icon-for-title" src="${products[index].icon}" alt="Logo">
-        <h2>${products[index].category}</h2>
+        <h2 id="title-in-dish-title">${products[index].category}</h2>
       </section>
     </div>
   `;
@@ -14,16 +14,16 @@ function getMenuTemplate(index, categoryIndex) {
   <div class="mother-container">     
         <section class="order-section">
           <img class="showroom" src="${products[index].items[categoryIndex].image}" alt="${products[index].items[categoryIndex].alt}">
+          <div class="positioning-items">
           <div class="positioning-name-price">
             <h4>${products[index].items[categoryIndex].name}</h4>
-            <p>${products[index].items[categoryIndex].price}</p>
+            <p>${products[index].items[categoryIndex].price}€</p>
           </div>
-          <div>
+          <div class="positioning-description-button">
             <p>${products[index].items[categoryIndex].description}</p>
           </div>
-          <div>
-            <button id="basket-btn" onclick="addToBasket()">In den Warenkorb</button>
           </div>
+          <button id="basket-btn" onclick="addToBasket()"><p>In den Warenkorb</p></button>
         </section>
       </div>
   `;

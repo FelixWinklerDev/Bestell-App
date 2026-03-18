@@ -9,7 +9,7 @@ let products = [
         'name': 'Vegetarischer Camembert-Burger',
         'price': 10.99,
         'description':
-          'Blattsalat, rote Zwiebeln, gebackenen Camembert, Preiselbeermarmelade',
+          'Brioche buns, Blattsalat, rote Zwiebeln, gebackenen Camembert, Preiselbeermarmelade, Mayonnaise',
       },
       {
         'image':'./assets/img/burger2.jpg',
@@ -17,7 +17,7 @@ let products = [
         'name': 'Veganer Burger mit Roter Beete und Tofu',
         'price': 12.99,
         'description':
-          'rote Beete, Kidneybohnen, Gurken, Sojageschnetzeltes, Tomaten, hausgemachter Vinaigrette',
+          'Vollkorn Buns, rote Beete, Kidneybohnen, Gurken, Sojageschnetzeltes, Tomaten, hausgemachter Vinaigrette',
       },
       {
         'image':'./assets/img/burger3.jpg',
@@ -25,7 +25,7 @@ let products = [
         'name': 'Big Beef Burger',
         'price': 15.99,
         'description':
-          'Rindfleisch, Bacon, Gewürzgurken, Smoked cheese, Ketchup, BBQ Soße',
+          'Weizen Buns, Rindfleisch, Bacon, Gewürzgurken, Smoked cheese, Ketchup, BBQ Soße, Smoked Mayonnaise',
       },
       {
         'image':'./assets/img/burger4.jpg',
@@ -33,7 +33,7 @@ let products = [
         'name': 'Chicken Burger',
         'price': 13.99,
         'description':
-          'Hähnchenbrustfilet, Knusper Panade, Feldsalat, Smocked Mayo, Tomate, getrocknete Tomate',
+          'Weizen Buns, Hähnchenbrustfilet, Knusper Panade, Feldsalat, Smocked Mayo, Tomate, getrocknete Tomate',
       },
     ],
   },
@@ -46,7 +46,7 @@ let products = [
         'alt':'Salami Pizza',
         'name': 'Salami',
         'price': 10.99,
-        'description': 'Salami, Tomatensoße, Gouda',
+        'description': 'Dinkelteig, Geflügelsalami, Tomatensoße, Gouda, Mozzarella, Basilikum',
       },
       {
         'image':'./assets/img/pizza2.jpg',
@@ -54,7 +54,7 @@ let products = [
         'name': 'Mexico',
         'price': 13.99,
         'description':
-          'Jalapeños, Hackfleisch, Kidneybohnen, Chilli, Mais, Frühlingszwiebeln, Gouda, Tomatensoße',
+          'Dinkelteig, Jalapeños, Hackfleisch, Kidneybohnen, Chilli, Mais, Frühlingszwiebeln, Gouda, Tomatensoße',
       },
       {
         'image':'./assets/img/pizza3.jpeg',
@@ -62,7 +62,7 @@ let products = [
         'name': 'Alaska',
         'price': 15.99,
         'description':
-          'Räucherlachs, rote Zwiebeln, Knoblauch-Dill-Creme, Kaviar, Gouda',
+          'Dinkelteig, Räucherlachs, rote Zwiebeln, Knoblauch-Dill-Creme, Kaviar, Gouda',
       },
       {
         'image':'./assets/img/pizza4.jpg',
