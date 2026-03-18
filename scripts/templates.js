@@ -17,13 +17,13 @@ function getMenuTemplate(index, categoryIndex) {
           <div class="positioning-items">
           <div class="positioning-name-price">
             <h4>${products[index].items[categoryIndex].name}</h4>
-            <p>${products[index].items[categoryIndex].price}€</p>
+            <p>${formatToCurrency(products[index].items[categoryIndex].price)}</p>
           </div>
           <div class="positioning-description-button">
             <p>${products[index].items[categoryIndex].description}</p>
           </div>
           </div>
-          <button id="basket-btn" onclick="addToBasket()"><p>In den Warenkorb</p></button>
+          <button id="basket-btn" onclick="addToBasket(${index}, ${categoryIndex})"><p>In den Warenkorb</p></button>
         </section>
       </div>
   `;
@@ -31,17 +31,25 @@ function getMenuTemplate(index, categoryIndex) {
 
 function emptyBasket(){
   return `
-  <div class="positioning-basket">
-        <p class="basket-subtitle">Oh oh... Leider ist dein Warenkorb leer.
-        Such dir was schönes aus unserem Sortiment.
-        </p>
-        <img src="./assets/icons/basket.png" alt="Warenkorb">
-      </div>
+  <h3 id="basket-title">Dein Warenkorb</h3>
+    <div class="positioning-basket">
+      <p class="basket-subtitle">Oh oh... Leider ist dein Warenkorb leer.
+      Such dir was schönes aus unserem Sortiment.
+      </p>
+      <img src="./assets/icons/basket.png" alt="Warenkorb">
+    </div>
   `
 }
 
-function getBasketDishTemplate(index, categoryIndex){
+function getBasketDishTemplate(item, basketIndex){
   return `
-  
+  <h3 id="basket-title">Dein Warenkorb</h3>
+    <div class="mother-basket">
+      <div class="basket-positioning">
+        <p>${[basketIndex + 1]}x</p>
+        <p>${item.name}</p>
+        <p>${formatToCurrency(item.price)}</p>
+      </div>
+    </div>
   `
 }

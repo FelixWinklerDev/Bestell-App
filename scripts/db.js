@@ -97,7 +97,7 @@ let products = [
       {
         'image':'./assets/img/salat3.jpg',
         'alt':'Griechischer Salat',
-        'name': 'Griechicher Salat',
+        'name': 'Griechischer Salat',
         'price': 9.99,
         'description':
           'gemischter Blattsalat, Feta, schwarze Oliven, rote Zwiebeln, Cherrytoamaten, Gurke',
@@ -113,3 +113,5 @@ let products = [
     ],
   },
 ];
+
+let basket = [];

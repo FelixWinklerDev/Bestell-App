@@ -1,5 +1,6 @@
 function init() {
   renderMenu();
+  renderBasket();
 }
 
 function renderMenu() {
@@ -25,15 +26,25 @@ function formatToCurrency(amount) {
   return dotReplace + '€';
 }
 
-function getItemsInBasket(){
+function renderBasket(){
   let itemBasketRef = document.getElementById('basket-content');
   itemBasketRef.innerHTML = '';
 
-  for (let basketIndex = 0; basketIndex < category.items.length.length; basketIndex++) {
-    itemBasketRef.innerHTML += getBasketDishTemplate(index, categoryIndex);
+  if (basket.length === 0) {
+    itemBasketRef.innerHTML = emptyBasket();
+    return;
   }
+
+  for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
+    let item = basket[basketIndex]
+    itemBasketRef.innerHTML += getBasketDishTemplate(item, basketIndex);
+  }
+  
 }
 
-function addToBasket(){
-  
+function addToBasket(index, categoryIndex){
+  let chosenItem = products[index].items[categoryIndex];
+  basket.push(chosenItem);
+
+  renderBasket()
 }

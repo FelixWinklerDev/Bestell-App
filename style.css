@@ -191,3 +191,11 @@
 .button-txt{
   color: #ffffff;
 }
+
+.mother-basket{
+  background-color: #FDEADC;
+}
+
+.basket-positioning{
+  display: flex;
+}
