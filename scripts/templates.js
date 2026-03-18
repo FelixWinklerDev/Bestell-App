@@ -28,3 +28,20 @@ function getMenuTemplate(index, categoryIndex) {
       </div>
   `;
 }
+
+function emptyBasket(){
+  return `
+  <div class="positioning-basket">
+        <p class="basket-subtitle">Oh oh... Leider ist dein Warenkorb leer.
+        Such dir was schönes aus unserem Sortiment.
+        </p>
+        <img src="./assets/icons/basket.png" alt="Warenkorb">
+      </div>
+  `
+}
+
+function getBasketDishTemplate(index, categoryIndex){
+  return `
+  
+  `
+}

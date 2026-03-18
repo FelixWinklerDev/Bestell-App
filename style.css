@@ -92,7 +92,7 @@
   text-decoration: underline;
   scale: calc(1.1);
   text-shadow:
-    1px 1px 2px red,
+    1px 1px 2px #E76C1F,
     0 0 1rem #FACAAC,
     0 0 0.2rem #FACAAC;
 }
@@ -130,6 +130,10 @@
   background-color: #E76C1F;
 }
 
+#title-in-dish-title{
+  color: #ffffff;
+}
+
 .order-section {
   background-color: #fdeadc;
   display: flex;
@@ -159,9 +163,31 @@
   border-radius: 15px;
 }
 
+#basket-btn:hover{
+  scale: calc(1.1);
+}
+
 .positioning-basket{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+#basket-title,
+.basket-subtitle{
+  text-align: center;
+  color: #FDEADC;
+}
+
+.show-mobile-basket{
+  width: 100%;
+  background-color: #E76C1F;
+  border-radius: 15px;
+}
+
+.button-txt{
+  color: #ffffff;
 }

@@ -90,7 +90,7 @@ let products = [
         'image':'./assets/img/salat2.jpg',
         'alt':'Caesar Salat',
         'name': 'Ceasar Salat',
-        'price': 12.99,
+        'price': 14.99,
         'description':
           'Hähnchenbrustfilet, Romanasalat, Original Ceasar Dressing, Croûtons',
       },
@@ -98,7 +98,7 @@ let products = [
         'image':'./assets/img/salat3.jpg',
         'alt':'Griechischer Salat',
         'name': 'Griechicher Salat',
-        'price': 8.99,
+        'price': 9.99,
         'description':
           'gemischter Blattsalat, Feta, schwarze Oliven, rote Zwiebeln, Cherrytoamaten, Gurke',
       },
@@ -106,7 +106,7 @@ let products = [
         'image':'./assets/img/salat4.jpg',
         'alt':'Soja Bowl',
         'name': 'Soja Bowl',
-        'price': 11.99,
+        'price': 14.99,
         'description':
           'Sojageschnetzeltes, Kichererbsen, Feldsalat, Couscous, getrocknete Tomate, Veganes Ranch Dressing',
       },

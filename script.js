@@ -24,3 +24,16 @@ function formatToCurrency(amount) {
   let dotReplace = formatted.replace('.', ',');
   return dotReplace + '€';
 }
+
+function getItemsInBasket(){
+  let itemBasketRef = document.getElementById('basket-content');
+  itemBasketRef.innerHTML = '';
+
+  for (let basketIndex = 0; basketIndex < category.items.length.length; basketIndex++) {
+    itemBasketRef.innerHTML += getBasketDishTemplate(index, categoryIndex);
+  }
+}
+
+function addToBasket(){
+  
+}
