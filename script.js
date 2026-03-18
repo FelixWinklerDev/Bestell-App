@@ -3,18 +3,19 @@ function init() {
 }
 
 function renderMenu() {
-  let contentRef = document.getElementById('main-content');
-  contentRef.innerHTML = '';
+  let titleRef = document.getElementById('main-content');
+  titleRef.innerHTML = '';
+  let itemRef = document.getElementById('main-content');
+  itemRef.innerHTML = '';
 
   for (let index = 0; index < products.length; index++) {
     let category = products[index];
-    let items = '';
+    titleRef.innerHTML += getCategoryHeaderTemplate(index);
     
     for (let categoryIndex = 0; categoryIndex < category.items.length; categoryIndex++) {
-      let item = category.items[categoryIndex];
-      items += `<div>${item.name} - ${item.price}€</div>`
+      let items = category.items[categoryIndex];
+      itemRef.innerHTML += getMenuTemplate(index, categoryIndex);
     }
-  contentRef.innerHTML += getMenuTemplate(index, items);
   }
 }
 

@@ -17,7 +17,13 @@
   width: 15px;
 }
 
-.burger {
+.icon-for-title {
   height: 91px;
   width: 88px;
+}
+
+.showroom{
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
 }
