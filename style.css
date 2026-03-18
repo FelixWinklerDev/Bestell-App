@@ -199,3 +199,26 @@
 .basket-positioning{
   display: flex;
 }
+
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add,
+.delete{
+  height: 29px;
+  width: 29px;
+  font-size: 2.4rem;
+}
+
+.add:hover,
+.delete:hover{
+  scale: calc(1.1);
+}
+
+.button-positioning{
+  display: flex;
+  align-items: center;
+}

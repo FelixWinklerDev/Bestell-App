@@ -48,7 +48,16 @@ function getBasketDishTemplate(item, basketIndex){
       <div class="basket-positioning">
         <p>${[basketIndex + 1]}x</p>
         <p>${item.name}</p>
-        <p>${formatToCurrency(item.price)}</p>
+      </div>
+      <div class="button-container">
+        <div class="button-positioning">
+          <button class="delete" onclick="removeItemToBasket()"><img src="./assets/icons/delete.png" alt="Mülleimer"></button>
+          <p>${[basketIndex + 1]}</p>
+          <button class="add" onclick="addItemToBasket()">+</button>
+        </div>
+        <div>
+          <p>${formatToCurrency(item.price)}</p>
+        </div>
       </div>
     </div>
   `

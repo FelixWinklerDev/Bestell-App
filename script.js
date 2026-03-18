@@ -48,3 +48,4 @@ function addToBasket(index, categoryIndex){
 
   renderBasket()
 }
+
