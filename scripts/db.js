@@ -108,7 +108,7 @@ let products = [
         'name': 'Soja Bowl',
         'price': 14.99,
         'description':
-          'Sojageschnetzeltes, Kichererbsen, Feldsalat, Couscous, getrocknete Tomate, Veganes Ranch Dressing',
+          'paniertes Sojageschnetzeltes, Kichererbsen, Feldsalat, Spinat, Couscous, getrocknete Tomate, Avocado, Mais, Rote Beete, Veganes Ranch Dressing',
       },
     ],
   },

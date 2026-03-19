@@ -27,7 +27,7 @@ function formatToCurrency(amount) {
 }
 
 function renderBasket(){
-  let itemBasketRef = document.getElementById('basket-content');
+  let itemBasketRef = document.getElementById('basket-items');
   itemBasketRef.innerHTML = '';
 
   if (basket.length === 0) {

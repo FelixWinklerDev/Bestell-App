@@ -31,7 +31,6 @@ function getMenuTemplate(index, categoryIndex) {
 
 function emptyBasket(){
   return `
-  <h3 id="basket-title">Dein Warenkorb</h3>
     <div class="positioning-basket">
       <p class="basket-subtitle">Oh oh... Leider ist dein Warenkorb leer.
       Such dir was schönes aus unserem Sortiment.
@@ -43,7 +42,6 @@ function emptyBasket(){
 
 function getBasketDishTemplate(item, basketIndex){
   return `
-  <h3 id="basket-title">Dein Warenkorb</h3>
     <div class="mother-basket">
       <div class="basket-positioning">
         <p>${[basketIndex + 1]}x</p>
