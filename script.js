@@ -32,7 +32,7 @@ function renderBasket(){
 
   if (basket.length === 0) {
     itemBasketRef.innerHTML = emptyBasket();
-    return;
+
   }
   for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
     let item = basket[basketIndex]
@@ -98,7 +98,7 @@ function getBasketTotal() {
 }
 
 function openDialog() {
-  const dialogRef = document.getElementById('checkout-dialog');
+  let dialogRef = document.getElementById('checkout-dialog');
   dialogRef.showModal();
   dialogRef.classList.add('opened');
 }

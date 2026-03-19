@@ -226,7 +226,7 @@
 }
 
 #basket-items{
-  height: 250px;
+  height: 300px;
   overflow-y: scroll;
   scrollbar-width: thin;
 }
@@ -241,6 +241,19 @@
 .checkout-flex{
   display: flex;
   justify-content: space-between;
+}
+
+.order-btn{
+  background-color: #E76C1F;
+}
+
+.order-btn:hover{
+  background-color: #e18044;
+    scale: calc(1.05);
+}
+
+.order{
+  color: #ffffff;
 }
 
 #checkout-dialog {

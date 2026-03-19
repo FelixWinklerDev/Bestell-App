@@ -76,7 +76,7 @@ function getCheckoutTemplate(amounts) {
         <h4 class="basket-subtitle">Gesamt:</h4>
         <h4 class="basket-subtitle">${formatToCurrency(amounts.total)}</h4>
       </div>
-      <button class="order-btn" onclick="openDialog()">Bestellen</button>
+      <button class="order-btn" onclick="openDialog()"><p class="order">Bestellen (${formatToCurrency(amounts.total)})</p></button>
     </div>
   `;
 }
