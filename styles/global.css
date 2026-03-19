@@ -20,48 +20,48 @@ button {
 a {
   text-decoration: none;
   cursor: pointer;
-  font-family: 'Palaquin-Medium';
+  font-family: 'Palanquin-Medium';
   font-size: 1.6rem;
   font-weight: 400;
 }
 
 h1 {
-  font-family: 'Palaquin-Bold';
+  font-family: 'Palanquin-Bold';
   font-size: 4.5rem;
   font-weight: 700;
   color: #363534;
 }
 
 h2 {
-  font-family: 'Palaquin-Bold';
+  font-family: 'Palanquin-Bold';
   font-size: 3.8rem;
   font-weight: 700;
   color: #363534;
 }
 
 h3 {
-  font-family: 'Palaquin-Bold';
+  font-family: 'Palanquin-Bold';
   font-size: 3.0rem;
   font-weight: 700;
   color: #363534;
 }
 
 h4 {
-  font-family: 'Palaquin-Bold';
+  font-family: 'Palanquin-Bold';
   font-size: 2.6rem;
   font-weight: 700;
   color: #363534;
 }
 
 p {
-  font-family: 'Palaquin-Medium';
+  font-family: 'Palanquin-Medium';
   font-size: 1.6rem;
   font-weight: 400;
   color: #363534;
 }
 
 span {
-  font-family: 'Palaquin-Medium';
+  font-family: 'Palanquin-Medium';
   font-weight: 400;
   font-size: 1.6rem;
   color: #363534;
