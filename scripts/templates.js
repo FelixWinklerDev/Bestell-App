@@ -44,19 +44,39 @@ function getBasketDishTemplate(item, basketIndex){
   return `
     <div class="mother-basket">
       <div class="basket-positioning">
-        <p>${[basketIndex + 1]}x</p>
+        <p>${[item.amount]}x</p>
         <p>${item.name}</p>
       </div>
       <div class="button-container">
         <div class="button-positioning">
-          <button class="delete" onclick="removeItemToBasket()"><img src="./assets/icons/delete.png" alt="Mülleimer"></button>
-          <p>${[basketIndex + 1]}</p>
-          <button class="add" onclick="addItemToBasket()">+</button>
+          <button class="delete" onclick="removeItemFromBasket(${basketIndex})"><img src="./assets/icons/delete.png" alt="Mülleimer"></button>
+          <p>${[item.amount]}</p>
+          <button class="add" onclick="increaseAmount(${basketIndex})">+</button>
         </div>
         <div>
-          <p>${formatToCurrency(item.price)}</p>
+          <p>${formatToCurrency(item.price * item.amount)}</p>
         </div>
       </div>
     </div>
   `
+}
+
+function getCheckoutTemplate(amounts) {
+  return `
+    <div class="checkout-container">
+      <div class="checkout-flex">
+        <p class="basket-subtitle">Zwischensumme:</p>
+        <p class="basket-subtitle">${formatToCurrency(amounts.subtotal)}</p>
+      </div>
+      <div class="checkout-flex">
+        <p class="basket-subtitle">Lieferkosten:</p>
+        <p class="basket-subtitle">${formatToCurrency(amounts.delivery)}</p>
+      </div>
+      <div class="checkout-flex">
+        <h4 class="basket-subtitle">Gesamt:</h4>
+        <h4 class="basket-subtitle">${formatToCurrency(amounts.total)}</h4>
+      </div>
+      <button class="order-btn" onclick="order-dishes">Bestellen</button>
+    </div>
+  `;
 }

@@ -7,7 +7,7 @@ let products = [
         'image':'./assets/img/burger1.jpg',
         'alt':'Camembert-Burger',
         'name': 'Vegetarischer Camembert-Burger',
-        'price': 10.99,
+        'price': 10.90,
         'description':
           'Brioche buns, Blattsalat, rote Zwiebeln, gebackenen Camembert, Preiselbeermarmelade, Mayonnaise',
       },
@@ -15,7 +15,7 @@ let products = [
         'image':'./assets/img/burger2.jpg',
         'alt':'Veganer Buger',
         'name': 'Veganer Burger mit Roter Beete und Tofu',
-        'price': 12.99,
+        'price': 12.90,
         'description':
           'Vollkorn Buns, rote Beete, Kidneybohnen, Gurken, Sojageschnetzeltes, Tomaten, hausgemachter Vinaigrette',
       },
@@ -23,7 +23,7 @@ let products = [
         'image':'./assets/img/burger3.jpg',
         'alt':'Rindfleisch Burger',
         'name': 'Big Beef Burger',
-        'price': 15.99,
+        'price': 15.90,
         'description':
           'Weizen Buns, Rindfleisch, Bacon, Gewürzgurken, Smoked cheese, Ketchup, BBQ Soße, Smoked Mayonnaise',
       },
@@ -31,7 +31,7 @@ let products = [
         'image':'./assets/img/burger4.jpg',
         'alt':'Chicken Burger',
         'name': 'Chicken Burger',
-        'price': 13.99,
+        'price': 13.90,
         'description':
           'Weizen Buns, Hähnchenbrustfilet, Knusper Panade, Feldsalat, Smocked Mayo, Tomate, getrocknete Tomate',
       },
@@ -45,14 +45,14 @@ let products = [
         'image':'./assets/img/pizza1.jpg',
         'alt':'Salami Pizza',
         'name': 'Salami',
-        'price': 10.99,
+        'price': 10.90,
         'description': 'Dinkelteig, Geflügelsalami, Tomatensoße, Gouda, Mozzarella, Basilikum',
       },
       {
         'image':'./assets/img/pizza2.jpg',
         'alt':'Mexico Pizza',
         'name': 'Mexico',
-        'price': 13.99,
+        'price': 13.90,
         'description':
           'Dinkelteig, Jalapeños, Hackfleisch, Kidneybohnen, Chilli, Mais, Frühlingszwiebeln, Gouda, Tomatensoße',
       },
@@ -60,7 +60,7 @@ let products = [
         'image':'./assets/img/pizza3.jpeg',
         'alt':'Alaska Pizza',
         'name': 'Alaska',
-        'price': 15.99,
+        'price': 15.90,
         'description':
           'Dinkelteig, Räucherlachs, rote Zwiebeln, Knoblauch-Dill-Creme, Kaviar, Gouda',
       },
@@ -68,7 +68,7 @@ let products = [
         'image':'./assets/img/pizza4.jpg',
         'alt':'Vegane Pizza',
         'name': 'Vegan',
-        'price': 14.99,
+        'price': 14.90,
         'description':
           'Süßkartoffelteig, Kichererbsen, Spinat, getrocknete Tomaten, Veganen Käse, Tomatesoße',
       },
@@ -82,7 +82,7 @@ let products = [
         'image':'./assets/img/salat1.jpg',
         'alt':'Beilagensalat',
         'name': 'Klassischer Salat',
-        'price': 9.99,
+        'price': 9.90,
         'description':
           'gemischter Blattsalat, Paprika, Tomaten, Gurken, Granatapfelkerne, hausgemachter Vinaigrette, Croûtons',
       },
@@ -90,7 +90,7 @@ let products = [
         'image':'./assets/img/salat2.jpg',
         'alt':'Caesar Salat',
         'name': 'Ceasar Salat',
-        'price': 14.99,
+        'price': 14.90,
         'description':
           'Hähnchenbrustfilet, Romanasalat, Original Ceasar Dressing, Croûtons',
       },
@@ -98,7 +98,7 @@ let products = [
         'image':'./assets/img/salat3.jpg',
         'alt':'Griechischer Salat',
         'name': 'Griechischer Salat',
-        'price': 9.99,
+        'price': 9.90,
         'description':
           'gemischter Blattsalat, Feta, schwarze Oliven, rote Zwiebeln, Cherrytoamaten, Gurke',
       },
@@ -106,7 +106,7 @@ let products = [
         'image':'./assets/img/salat4.jpg',
         'alt':'Soja Bowl',
         'name': 'Soja Bowl',
-        'price': 14.99,
+        'price': 14.90,
         'description':
           'paniertes Sojageschnetzeltes, Kichererbsen, Feldsalat, Spinat, Couscous, getrocknete Tomate, Avocado, Mais, Rote Beete, Veganes Ranch Dressing',
       },

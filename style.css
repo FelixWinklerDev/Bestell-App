@@ -158,7 +158,8 @@
   flex-direction: column;
 }
 
-#basket-btn{
+#basket-btn,
+.order-btn{
   background-color: #ffffff;
   border-radius: 15px;
 }
@@ -172,8 +173,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
-  gap: 50px;
+  gap: 10px;
 }
 
 #basket-title,
@@ -194,6 +194,8 @@
 
 .mother-basket{
   background-color: #FDEADC;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
 .basket-positioning{
@@ -222,3 +224,22 @@
   display: flex;
   align-items: center;
 }
+
+#basket-items{
+  height: 250px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.seperator{
+  margin-top: 10px;
+  height: 2px;
+  width: 100%;
+  background-color: #FDEADC;
+}
+
+.checkout-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
