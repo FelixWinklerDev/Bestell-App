@@ -243,3 +243,20 @@
   justify-content: space-between;
 }
 
+#checkout-dialog {
+  height: 800px;
+  width: 1000px;
+  background-color: #333;
+}
+
+#checkout-dialog::backdrop {
+  opacity: 0;
+  background-color: #1e0c06e7;
+  transition: all 0.25s ease-in;
+}
+
+#checkout-dialog.opened::backdrop {
+  opacity: 0.85;
+  background-color: #1e0c06e7;
+  transition: all 0.25s ease-in;
+}

@@ -97,3 +97,8 @@ function getBasketTotal() {
   };
 }
 
+function openDialog() {
+  const dialogRef = document.getElementById('checkout-dialog');
+  dialogRef.showModal();
+  dialogRef.classList.add('opened');
+}

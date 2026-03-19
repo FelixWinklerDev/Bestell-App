@@ -49,8 +49,8 @@ function getBasketDishTemplate(item, basketIndex){
       </div>
       <div class="button-container">
         <div class="button-positioning">
-          <button class="delete" onclick="removeItemFromBasket(${basketIndex})"><img src="./assets/icons/delete.png" alt="Mülleimer"></button>
-          <p>${[item.amount]}</p>
+          <button class="delete" onclick="removeItemFromBasket(${basketIndex})">-</button>
+          <h5>${[item.amount]}</h5>
           <button class="add" onclick="increaseAmount(${basketIndex})">+</button>
         </div>
         <div>
@@ -76,7 +76,23 @@ function getCheckoutTemplate(amounts) {
         <h4 class="basket-subtitle">Gesamt:</h4>
         <h4 class="basket-subtitle">${formatToCurrency(amounts.total)}</h4>
       </div>
-      <button class="order-btn" onclick="order-dishes">Bestellen</button>
+      <button class="order-btn" onclick="openDialog()">Bestellen</button>
     </div>
+  `;
+}
+
+function getCheckoutDialog(){
+  return `
+  <div>
+  <div class="checkout-window">
+    <button class="close" onclick="closeDialog()">X</button>
+  </div>
+  <div>
+    <img class="delivery-truck" src="./assets/icons/390482e1a64bffed0bc1416df77319027c50bba3.png" alt="Lieferwagen">
+    <h4>Deine Bestellung wurde erhalten.</h4>
+    <p>Wir haben deine Bestellung erhalten und wird so schnell wie möglich bearbeiet.</p>
+    <p>Geschätzte Wartezeit: <span class="orange-inline">30 Minuten</span></p>
+  </div>
+</div>
   `;
 }
