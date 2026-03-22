@@ -10,6 +10,7 @@ function getCategoryHeaderTemplate(index) {
 }
 
 function getMenuTemplate(index, categoryIndex) {
+  let id = `btn${index}${categoryIndex}`;
   return `
   <div class="mother-container">     
         <section class="order-section">
@@ -23,7 +24,7 @@ function getMenuTemplate(index, categoryIndex) {
             <p>${products[index].items[categoryIndex].description}</p>
           </div>
           </div>
-          <button id="basket-btn" onclick="addToBasket(${index}, ${categoryIndex})"><p>In den Warenkorb</p></button>
+          <button class="basket-btn" id="${id}" onclick="addToBasket(${index}, ${categoryIndex})"><p>In den Warenkorb</p></button>
         </section>
       </div>
   `;
@@ -76,23 +77,9 @@ function getCheckoutTemplate(amounts) {
         <h4 class="basket-subtitle">Gesamt:</h4>
         <h4 class="basket-subtitle">${formatToCurrency(amounts.total)}</h4>
       </div>
+      <div class="order-position">
       <button class="order-btn" onclick="openDialog()"><p class="order">Bestellen (${formatToCurrency(amounts.total)})</p></button>
-    </div>
-  `;
-}
-
-function getCheckoutDialog(){
-  return `
-  <div>
-  <div class="checkout-window">
-    <button class="close" onclick="closeDialog()">X</button>
-  </div>
-  <div>
-    <img class="delivery-truck" src="./assets/icons/390482e1a64bffed0bc1416df77319027c50bba3.png" alt="Lieferwagen">
-    <h4>Deine Bestellung wurde erhalten.</h4>
-    <p>Wir haben deine Bestellung erhalten und wird so schnell wie möglich bearbeiet.</p>
-    <p>Geschätzte Wartezeit: <span class="orange-inline">30 Minuten</span></p>
-  </div>
-</div>
+      </div>
+      </div>
   `;
 }

@@ -3,6 +3,11 @@ function init() {
   renderBasket();
 }
 
+function renderAll() {
+  renderMenu();
+  renderBasket();
+}
+
 function renderMenu() {
   let titleRef = document.getElementById('main-content');
   titleRef.innerHTML = '';
@@ -28,11 +33,13 @@ function formatToCurrency(currency) {
 
 function renderBasket(){
   let itemBasketRef = document.getElementById('basket-items');
+  let checkoutRef = document.getElementById('checkout-section');
   itemBasketRef.innerHTML = '';
 
   if (basket.length === 0) {
     itemBasketRef.innerHTML = emptyBasket();
-
+    checkoutRef.innerHTML = '';
+    return;
   }
   for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
     let item = basket[basketIndex]
@@ -40,8 +47,6 @@ function renderBasket(){
   }
   renderTotal()
 }
-
-
 
 function addToBasket(index, categoryIndex){
   let product = products[index].items[categoryIndex];
@@ -56,13 +61,28 @@ function addToBasket(index, categoryIndex){
       'amount': 1}
       basket.push(newItem)
   }
-  renderBasket();
+  renderAll()
+  updateBasketButtonUI(index, categoryIndex)
+}
+
+function updateBasketButtonUI(index, categoryIndex) {
+  let btn = document.getElementById(`btn${index}${categoryIndex}`);
+  let productName = products[index].items[categoryIndex].name;
+  let basketItem = basket.find(item => item.name === productName);
+
+  if (basketItem) {
+    btn.classList.add('added-btn');
+    btn.innerHTML = `<p class="added-btn-txt">im Warenkorb vorhanden</p>`;
+  } else {
+    btn.classList.remove('added-btn');
+    btn.innerHTML = `<p>In den Warenkorb</p>`;
+  }
 }
 
 function increaseAmount(basketIndex) {
   let item = basket[basketIndex];
   item.amount++;
-  renderBasket();
+  renderAll();
 }
 
 function removeItemFromBasket(basketIndex) {
@@ -74,7 +94,7 @@ function removeItemFromBasket(basketIndex) {
   else {
     basket.splice(basketIndex, 1);
   }
-  renderBasket();
+  renderAll();
 }
 
 function renderTotal(){
@@ -99,6 +119,14 @@ function getBasketTotal() {
 
 function openDialog() {
   let dialogRef = document.getElementById('checkout-dialog');
+  basket = [];
+  renderAll();
   dialogRef.showModal();
   dialogRef.classList.add('opened');
+}
+
+function closeDialog() {
+  let dialogRef = document.getElementById('checkout-dialog');
+  dialogRef.classList.remove('opened');
+  dialogRef.close();
 }
