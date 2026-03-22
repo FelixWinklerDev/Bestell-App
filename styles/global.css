@@ -73,3 +73,9 @@ span {
   font-size: 1.6rem;
   color: #363534;
 }
+
+@media (max-width: 360px){
+  h2{
+    font-size: 3rem;
+  }
+}
