@@ -48,6 +48,7 @@
 
     </section>
     <aside id="basket-content">
+      <button class="d-none" onclick="toggleBasket()"><p class="button-txt">X</p></button>
       <h3 id="basket-title">Dein Warenkorb</h3>
       <section id="basket-items">
 
@@ -71,8 +72,8 @@
       </div>
     </dialog>
   </main>
-  <section class="d-none show-at-">
-    <button class="mobile-basket-btn" onclick="show-mobile-basket"><p class="button-txt">Zum Warenkorb</p></button>
+  <section class="d-none">
+    <button class="mobile-basket-btn" onclick="toggleBasket()"><p class="button-txt">Zum Warenkorb</p></button>
   </section>
   <footer class="footer-positioning">
     <a class="footer-link" href="#top">©2025 BurgerHouse</a>

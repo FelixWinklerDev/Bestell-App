@@ -72,7 +72,7 @@ function updateBasketButtonUI(index, categoryIndex) {
 
   if (basketItem) {
     btn.classList.add('added-btn');
-    btn.innerHTML = `<p class="added-btn-txt">im Warenkorb vorhanden</p>`;
+    btn.innerHTML = `<p class="added-btn-txt">im Warenkorb hinzugefügt</p>`;
   } else {
     btn.classList.remove('added-btn');
     btn.innerHTML = `<p>In den Warenkorb</p>`;
@@ -129,4 +129,9 @@ function closeDialog() {
   let dialogRef = document.getElementById('checkout-dialog');
   dialogRef.classList.remove('opened');
   dialogRef.close();
+}
+
+function toggleBasket() {
+  let basket = document.getElementById('basket-content');
+  basket.classList.toggle('show');
 }
