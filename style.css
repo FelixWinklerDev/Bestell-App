@@ -377,10 +377,6 @@
     width: 90%;
   }
 
-  #basket-content.show{
-    display: block;
-  }
-
   .mobile-basket-btn{
     background-color: #E76C1F;
     position: fixed;
