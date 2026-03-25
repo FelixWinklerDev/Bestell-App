@@ -350,6 +350,11 @@
     width: 100%;
   }
 
+  .mother-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
   #basket-content {
     display: none;
     position: fixed;
@@ -375,11 +380,6 @@
 
   .order-btn{
     width: 90%;
-  }
-
-  .mobile-basket-btn{
-    background-color: #E76C1F;
-    position: fixed;
   }
 
   .d-none{

@@ -7,8 +7,14 @@ html,
   box-sizing: border-box;
 }
 
-header,
-footer {
+header {
+  background-color: #E76C1F;
+}
+
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: #E76C1F;
 }
 
@@ -16,6 +22,7 @@ button {
   border-width: 0;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
+  
 }
 
 a {
